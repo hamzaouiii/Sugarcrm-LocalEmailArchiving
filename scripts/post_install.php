@@ -32,6 +32,7 @@ $scheduler = BeanFactory::newBean('Schedulers');
 $scheduler->name = $jobName;
 $scheduler->job = $jobString;
 $scheduler->status = 'Active';
-$scheduler->interval = '*/1::*::*::*';
+$scheduler->date_start_time = '2005-01-01 09:15:00';
+$scheduler->job_interval = '*/1::*::*::*::*';
 $scheduler->catch_up = 1;
 $scheduler->save();

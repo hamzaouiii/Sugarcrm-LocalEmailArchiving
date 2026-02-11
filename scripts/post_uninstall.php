@@ -4,7 +4,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
   die('Not A Valid Entry Point');
 }
 
-$jobString = 'syncInboundEmails';
+$jobString = 'function::syncInboundEmails';
 
 $jobs = BeanFactory::getBean('Schedulers')->get_full_list(
   '',
