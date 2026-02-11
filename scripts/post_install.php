@@ -7,7 +7,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
 require_once 'modules/Schedulers/Scheduler.php';
 
 $jobName   = 'Sync Inbound Emails (Local Archive)';
-$jobString = 'syncInboundEmails';
+$jobString = 'function::syncInboundEmails';
 
 // --------------------------------------------------
 // Prevent duplicates (important!)
